@@ -1,0 +1,722 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 4
+/Kids [ 4 0 R 10 0 R 13 0 R 16 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 5183
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 51.35433 782.874 cm
+q
+.090196 .211765 .364706 rg
+BT 1 0 0 1 0 3 Tm /F2 16 Tf 19 TL 15.53146 0 Td (Policy Reference \227 Actual Policies and Simple Explanations) Tj T* -15.53146 0 Td ET
+Q
+Q
+q
+1 0 0 1 51.35433 754.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12 Tm /F1 8 Tf 10 TL (Each policy is shown first in a readable JSON block, followed by a plain-English explanation. AWS-managed policies are referenced by) Tj T* (name rather than reproducing AWS-maintained JSON, which can change over time.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 734.874 cm
+q
+.090196 .211765 .364706 rg
+BT 1 0 0 1 0 3 Tm /F2 12 Tf 15 TL (A. Policies attached to the EC2 IAM roles) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 718.874 cm
+q
+.121569 .305882 .47451 rg
+BT 1 0 0 1 0 2.5 Tm /F2 9.5 Tf 12 TL (1. AmazonSSMManagedInstanceCore \227 attached to both roles) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 692.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12 Tm /F1 8 Tf 10 TL (AWS-managed policy. It provides the core permissions required for EC2 instances to register with and communicate with Systems) Tj T* (Manager. Its full JSON is maintained by AWS and is intentionally not copied here; the policy name links the exact managed policy in IAM.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 676.874 cm
+q
+.121569 .305882 .47451 rg
+BT 1 0 0 1 0 2.5 Tm /F2 9.5 Tf 12 TL (2. AWS-quick-setup-RunPatchBaseline \227 attached to both roles) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 660.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Actual customer-managed policy JSON:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 575.374 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 4 76.1 Tm /F3 6.4 Tf 7.5 TL ({) Tj T* (  "Version": "2012-10-17",) Tj T* (  "Statement": [) Tj T* (    {) Tj T* (      "Sid": "ReadQuickSetupPatchBaseline",) Tj T* (      "Effect": "Allow",) Tj T* (      "Action": "s3:GetObject",) Tj T* (      "Resource": "arn:aws:s3:::aws-quicksetup-patchpolicy-754025990014-yld5i/*") Tj T* (    }) Tj T* (  ]) Tj T* (}) Tj T* ET
+Q
+q
+1 0 0 1 51.35433 549.374 cm
+q
+BT 1 0 0 1 0 12 Tm -0.081254 Tw 10 TL /F2 8 Tf 0 0 0 rg (Simple explanation:) Tj /F1 8 Tf ( This lets the instance read Patch Manager's Quick Setup configuration files from that specific bucket. It does not grant) Tj T* 0 Tw (access to every S3 bucket.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 533.374 cm
+q
+.121569 .305882 .47451 rg
+BT 1 0 0 1 0 2.5 Tm /F2 9.5 Tf 12 TL (3. CloudShield-PatchLog-S3-Access \227 attached to both roles) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 517.374 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Actual customer-managed policy JSON:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 431.874 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 4 76.1 Tm /F3 6.4 Tf 7.5 TL ({) Tj T* (  "Version": "2012-10-17",) Tj T* (  "Statement": [) Tj T* (    {) Tj T* (      "Sid": "WritePatchManagerLogs",) Tj T* (      "Effect": "Allow",) Tj T* (      "Action": "s3:PutObject",) Tj T* (      "Resource": "arn:aws:s3:::cloudshield-patch-manager-logs/*") Tj T* (    }) Tj T* (  ]) Tj T* (}) Tj T* ET
+Q
+q
+1 0 0 1 51.35433 405.874 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F2 8 Tf 0 0 0 rg (Simple explanation:) Tj /F1 8 Tf ( This allows the instances to upload Patch Manager output files to the objects inside cloudshield-patch-manager-logs.) Tj T* (It does not allow them to read or delete those objects.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 389.874 cm
+q
+.121569 .305882 .47451 rg
+BT 1 0 0 1 0 2.5 Tm /F2 9.5 Tf 12 TL (4. CloudShield-Backend-RolePolicy \227 inline policy on the backend role) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 373.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Actual customer-managed inline policy JSON:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 220.874 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 4 143.6 Tm /F3 6.4 Tf 7.5 TL ({) Tj T* (  "Version": "2012-10-17",) Tj T* (  "Statement": [) Tj T* (    {) Tj T* (      "Sid": "CloudShieldS3Access",) Tj T* (      "Effect": "Allow",) Tj T* (      "Action": [) Tj T* (        "s3:GetBucketLocation",) Tj T* (        "s3:ListBucket",) Tj T* (        "s3:GetObject",) Tj T* (        "s3:PutObject",) Tj T* (        "s3:DeleteObject") Tj T* (      ],) Tj T* (      "Resource": [) Tj T* (        "arn:aws:s3:::cloudshield-s3-bucket",) Tj T* (        "arn:aws:s3:::cloudshield-s3-bucket/*") Tj T* (      ]) Tj T* (    }) Tj T* (  ]) Tj T* (}) Tj T* ET
+Q
+q
+1 0 0 1 51.35433 194.874 cm
+q
+BT 1 0 0 1 0 12 Tm 10 TL /F2 8 Tf 0 0 0 rg (Simple explanation:) Tj /F1 8 Tf ( The backend role can check the bucket's Region, list its objects, read objects, upload objects, and delete objects in) Tj T* (cloudshield-s3-bucket. The permissions are limited to this project bucket and its contents.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 171.874 cm
+q
+.662745 .729412 .784314 RG
+.5 w
+.952941 .964706 .972549 rg
+n 0 -5 492.5669 30 re B*
+Q
+q
+0 0 0 rg
+BT 1 0 0 1 5 12 Tm /F1 8 Tf 10 TL (Quick Setup tag \(not an IAM policy\): QSConfigId-yld5i = yld5i. The tag identifies the Quick Setup configuration; it does not itself grant) Tj T* (access.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+0 0 595.2756 45.35433 re
+f*
+0.333333 0.333333 0.333333 rg
+BT
+/F1-0 7 Tf
+8.4 TL
+ET
+BT
+1 0 0 1 264.3668 19.84252 Tm
+(PDF page 209 of 212) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Courier
+/Encoding /WinAnsiEncoding
+/Name /F3
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/Contents 11 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 12 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+11 0 obj
+<<
+/Length 5164
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 51.35433 782.874 cm
+q
+.090196 .211765 .364706 rg
+BT 1 0 0 1 0 3 Tm /F2 16 Tf 19 TL 110.2435 0 Td (B. S3 Gateway VPC Endpoint policy) Tj T* -110.2435 0 Td ET
+Q
+Q
+q
+1 0 0 1 51.35433 764.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Actual policy JSON recorded for the endpoint:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 349.374 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 4 406.1 Tm /F3 6.4 Tf 7.5 TL ({) Tj T* (  "Version": "2012-10-17",) Tj T* (  "Statement": [) Tj T* (    {) Tj T* (      "Sid": "AllowCloudShieldBucketAccess",) Tj T* (      "Effect": "Allow",) Tj T* (      "Principal": "*",) Tj T* (      "Action": [) Tj T* (        "s3:GetBucketLocation",) Tj T* (        "s3:ListBucket",) Tj T* (        "s3:GetObject",) Tj T* (        "s3:PutObject",) Tj T* (        "s3:DeleteObject") Tj T* (      ],) Tj T* (      "Resource": [) Tj T* (        "arn:aws:s3:::cloudshield-s3-bucket",) Tj T* (        "arn:aws:s3:::cloudshield-s3-bucket/*") Tj T* (      ]) Tj T* (    },) Tj T* (    {) Tj T* (      "Sid": "AllowPatchManagerLogsBucketAccess",) Tj T* (      "Effect": "Allow",) Tj T* (      "Principal": "*",) Tj T* (      "Action": [) Tj T* (        "s3:GetBucketLocation",) Tj T* (        "s3:ListBucket",) Tj T* (        "s3:GetObject",) Tj T* (        "s3:PutObject") Tj T* (      ],) Tj T* (      "Resource": [) Tj T* (        "arn:aws:s3:::cloudshield-patch-manager-logs",) Tj T* (        "arn:aws:s3:::cloudshield-patch-manager-logs/*") Tj T* (      ]) Tj T* (    },) Tj T* (    {) Tj T* (      "Sid": "AllowAmazonLinux2023Repository",) Tj T* (      "Effect": "Allow",) Tj T* (      "Principal": "*",) Tj T* (      "Action": "s3:GetObject",) Tj T* (      "Resource": "arn:aws:s3:::al2023-repos-ap-south-1-de612dc2/*") Tj T* (    },) Tj T* (    {) Tj T* (      "Sid": "AllowSSMPatchPayloads",) Tj T* (      "Effect": "Allow",) Tj T* (      "Principal": "*",) Tj T* (      "Action": "s3:GetObject",) Tj T* (      "Resource": [) Tj T* (        "arn:aws:s3:::aws-ssm-ap-south-1/*",) Tj T* (        "arn:aws:s3:::patch-baseline-snapshot-ap-south-1/*",) Tj T* (        "arn:aws:s3:::aws-patch-manager-ap-south-1-cb7c62ff9/*",) Tj T* (        "arn:aws:s3:::aws-quicksetup-patchpolicy-754025990014-yld5i/*") Tj T* (      ]) Tj T* (    }) Tj T* (  ]) Tj T* (}) Tj T* ET
+Q
+q
+1 0 0 1 51.35433 329.374 cm
+q
+.090196 .211765 .364706 rg
+BT 1 0 0 1 0 3 Tm /F2 12 Tf 15 TL (Statement-by-statement explanation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 56.69291 218.174 cm
+q
+.85098 .917647 .968627 rg
+n 0 107.2 481.8898 -16.4 re f*
+0 0 0 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 94.8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.4 Tm /F1 7 Tf 8.4 TL (Statement) Tj T* ET
+Q
+Q
+q
+1 0 0 1 151.4016 94.8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.4 Tm /F1 7 Tf 8.4 TL (What it allows / why it exists) Tj T* ET
+Q
+Q
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 78.4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.4 Tm /F1 7 Tf 8.4 TL (AllowCloudShieldBucketAccess) Tj T* ET
+Q
+Q
+q
+1 0 0 1 151.4016 70 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 9.8 Tm /F1 7 Tf 8.4 TL (Allows the listed bucket-level actions and object read/write/delete actions for cloudshield-s3-bucket) Tj T* (through this endpoint.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 53.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.4 Tm /F1 7 Tf 8.4 TL (AllowPatchManagerLogsBucketAccess) Tj T* ET
+Q
+Q
+q
+1 0 0 1 151.4016 45.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 9.8 Tm /F1 7 Tf 8.4 TL (Allows bucket lookup/listing and object read/write actions for cloudshield-patch-manager-logs, including) Tj T* (uploading Patch Manager output.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 28.8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.4 Tm /F1 7 Tf 8.4 TL (AllowAmazonLinux2023Repository) Tj T* ET
+Q
+Q
+q
+1 0 0 1 151.4016 28.8 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.4 Tm /F1 7 Tf 8.4 TL (Allows downloading Amazon Linux 2023 repository objects from the specified regional repository bucket.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 12.4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 1.4 Tm /F1 7 Tf 8.4 TL (AllowSSMPatchPayloads) Tj T* ET
+Q
+Q
+q
+1 0 0 1 151.4016 4 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 9.8 Tm /F1 7 Tf 8.4 TL (Allows downloading objects from the listed SSM, patch baseline snapshot, patch manager, and Quick) Tj T* (Setup buckets. This was added to allow the required patch files/configuration to be retrieved.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.717647 .788235 .839216 RG
+.35 w
+n 0 107.2 m 481.8898 107.2 l S
+n 0 0 m 481.8898 0 l S
+n 0 0 m 0 107.2 l S
+n 481.8898 0 m 481.8898 107.2 l S
+n 0 90.8 m 481.8898 90.8 l S
+n 0 66 m 481.8898 66 l S
+n 0 41.2 m 481.8898 41.2 l S
+n 0 24.8 m 481.8898 24.8 l S
+n 147.4016 0 m 147.4016 107.2 l S
+Q
+Q
+Q
+q
+1 0 0 1 51.35433 195.174 cm
+q
+.662745 .729412 .784314 RG
+.5 w
+.952941 .964706 .972549 rg
+n 0 -5 492.5669 30 re B*
+Q
+q
+BT 1 0 0 1 5 12 Tm 10 TL /F2 8 Tf 0 0 0 rg (Important:) Tj /F1 8 Tf ( This endpoint policy is a filter for requests travelling through the endpoint. It does not replace the EC2 role policy or the S3) Tj T* (bucket policy. The request must be allowed by all applicable authorization controls.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+0 0 595.2756 45.35433 re
+f*
+0.333333 0.333333 0.333333 rg
+BT
+/F1-0 7 Tf
+8.4 TL
+ET
+BT
+1 0 0 1 264.3668 19.84252 Tm
+(PDF page 210 of 212) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+12 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+13 0 obj
+<<
+/Contents 14 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 15 0 R
+/F2 8 0 R
+/F3 9 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+14 0 obj
+<<
+/Length 3149
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 51.35433 782.874 cm
+q
+.090196 .211765 .364706 rg
+BT 1 0 0 1 0 3 Tm /F2 16 Tf 19 TL 84.46746 0 Td (C. Bucket policy for cloudshield-s3-bucket) Tj T* -84.46746 0 Td ET
+Q
+Q
+q
+1 0 0 1 51.35433 764.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Actual bucket policy JSON recorded for the project storage bucket:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 611.874 cm
+%PreformattedPara
+0 0 0 rg
+BT 1 0 0 1 4 143.6 Tm /F3 6.4 Tf 7.5 TL ({) Tj T* (  "Version": "2012-10-17",) Tj T* (  "Statement": [) Tj T* (    {) Tj T* (      "Sid": "DenyInsecureTransport",) Tj T* (      "Effect": "Deny",) Tj T* (      "Principal": "*",) Tj T* (      "Action": "s3:*",) Tj T* (      "Resource": [) Tj T* (        "arn:aws:s3:::cloudshield-s3-bucket",) Tj T* (        "arn:aws:s3:::cloudshield-s3-bucket/*") Tj T* (      ],) Tj T* (      "Condition": {) Tj T* (        "Bool": {) Tj T* (          "aws:SecureTransport": "false") Tj T* (        }) Tj T* (      }) Tj T* (    }) Tj T* (  ]) Tj T* (}) Tj T* ET
+Q
+q
+1 0 0 1 51.35433 591.874 cm
+q
+.090196 .211765 .364706 rg
+BT 1 0 0 1 0 3 Tm /F2 12 Tf 15 TL (Simple explanation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 535.874 cm
+q
+BT 1 0 0 1 0 42 Tm 10 TL /F1 8 Tf 0 0 0 rg (\177 ) Tj /F2 8 Tf (Effect: Deny) Tj /F1 8 Tf ( \227 blocks requests that match the condition, even if another policy allows them.) Tj  T* (\177 ) Tj /F2 8 Tf (Principal: *) Tj /F1 8 Tf ( \227 the rule applies to any requester, subject to the condition and resource scope.) Tj  T* (\177 ) Tj /F2 8 Tf (Action: s3:*) Tj /F1 8 Tf ( \227 covers S3 actions on the specified bucket and objects.) Tj  T* (\177 ) Tj /F2 8 Tf (Condition aws:SecureTransport = false) Tj /F1 8 Tf ( \227 matches requests that do not use secure transport \(HTTP\). HTTPS requests do not match) Tj T* (this deny condition.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 515.874 cm
+q
+.090196 .211765 .364706 rg
+BT 1 0 0 1 0 3 Tm /F2 12 Tf 15 TL (Why it matters) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 479.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 22 Tm /F1 8 Tf 10 TL -0.046908 Tw (This policy enforces secure transport for access to cloudshield-s3-bucket. It protects data in transit, but it does not encrypt stored objects by) Tj T* 0 Tw (itself and does not grant access. IAM permissions, Block Public Access, and the endpoint policy \(when the endpoint is used\) remain) Tj T* (separate controls.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 459.874 cm
+q
+.090196 .211765 .364706 rg
+BT 1 0 0 1 0 3 Tm /F2 12 Tf 15 TL (Scope note) Tj T* ET
+Q
+Q
+q
+1 0 0 1 51.35433 423.874 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 22 Tm /F1 8 Tf 10 TL (This section intentionally covers only cloudshield-s3-bucket, the project bucket policy created by you. Policies on the CloudTrail/Flow Logs) Tj T* (and Patch Manager buckets are not explained here because the project record indicates they were created by AWS services or AWS) Tj T* (configuration workflows.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+0 0 595.2756 45.35433 re
+f*
+0.333333 0.333333 0.333333 rg
+BT
+/F1-0 7 Tf
+8.4 TL
+ET
+BT
+1 0 0 1 264.3668 19.84252 Tm
+(PDF page 211 of 212) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+15 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+16 0 obj
+<<
+/Contents 17 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font <<
+/F1 18 0 R
+/F1-0 19 0 R
+/F2 20 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+17 0 obj
+<<
+/Length 1549
+>>
+stream
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+.839216 .870588 .898039 RG
+n 51.02362 39.68504 m 544.252 39.68504 l S
+BT /F1 7.3 Tf 8.76 TL ET
+.396078 .466667 .52549 rg
+BT 1 0 0 1 51.02362 25.51181 Tm (CloudShield \227 Final Project Documentation) Tj T* ET
+BT 1 0 0 1 521.1183 25.51181 Tm (Page 1) Tj T* ET
+Q
+q
+1 0 0 1 59.85827 769.5354 cm
+q
+.090196 .211765 .364706 rg
+BT 1 0 0 1 0 4 Tm /F2 17 Tf 21 TL (Final outcome) Tj T* ET
+Q
+Q
+q
+1 0 0 1 59.85827 711.3354 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 42 Tm /F1 9.2 Tf 12.8 TL (CloudShield brings together network segmentation, multi-AZ web entry, a private backend and database tier,) Tj T* (IAM-based instance access, controlled S3 access, monitoring and notifications, audit logging, and Systems Manager) Tj T* (operations. The supplied evidence also records two practical resolutions: migrating the backend EBS volume to an) Tj T* (encrypted replacement and resolving Patch Manager's S3 access/output delivery requirements.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 59.85827 679.7354 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.4 Tm /F1 9.2 Tf 12.8 TL (This document distinguishes the intended architecture from confirmed test results. Patch Manager's final association) Tj T* (was a Scan operation, and no application endpoint is claimed as operational unless supported by a separate test.) Tj T* ET
+Q
+Q
+ 
+
+Q
+
+q
+0.0 0.0 595.2756 841.8898 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+1 1 1 rg
+n
+0 0 595.2756 45.35433 re
+f*
+0.333333 0.333333 0.333333 rg
+BT
+/F1-0 7 Tf
+8.4 TL
+ET
+BT
+1 0 0 1 264.3668 19.84252 Tm
+(PDF page 212 of 212) Tj
+T*
+ET
+Q
+
+
+endstream
+endobj
+18 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+19 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+20 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 21
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000134 00000 n 
+0000000183 00000 n 
+0000000436 00000 n 
+0000005671 00000 n 
+0000005778 00000 n 
+0000005885 00000 n 
+0000005997 00000 n 
+0000006102 00000 n 
+0000006358 00000 n 
+0000011575 00000 n 
+0000011683 00000 n 
+0000011939 00000 n 
+0000015141 00000 n 
+0000015249 00000 n 
+0000015497 00000 n 
+0000017099 00000 n 
+0000017207 00000 n 
+0000017315 00000 n 
+trailer
+<<
+/Size 21
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+17428
+%%EOF
