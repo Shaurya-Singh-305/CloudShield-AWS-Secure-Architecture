@@ -18,7 +18,7 @@ CloudShield demonstrates the design and integration of AWS services to support s
 
 ## Project Demonstration
 
-**[▶ Watch the CloudShield Walkthrough on Vimeo](https://bit.ly/CloudShield-Full-Walkthrough)**
+**[▶ Watch the CloudShield Walkthrough here](https://bit.ly/CloudShield-Full-Walkthrough)**
 
 The video presents the project architecture, implementation, and key configuration decisions.
 
